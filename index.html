@@ -1,0 +1,940 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <title>I'm fine</title>
+    <link rel="icon" type="image/svg+xml" href="image.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.x/dist/tabler-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Tab bar -->
+      <div class="tab-bar">
+        <img src="image.png" alt="I'm fine" class="tab-logo" />
+        <button class="tab-item active" onclick="switchTab('log', this)">
+          Log
+        </button>
+        <button class="tab-item" onclick="switchTab('history', this)">
+          History
+        </button>
+        <button class="tab-item" onclick="switchTab('heatmap', this)">
+          Heatmap
+        </button>
+        <button class="gear-btn" onclick="openSettings()" aria-label="Settings">
+          <i class="ti ti-settings"></i>
+        </button>
+      </div>
+
+      <!-- ── LOG ── -->
+      <div class="view active" id="tab-log">
+        <div class="log-header">
+          <p class="log-title">How are you feeling?</p>
+          <p class="log-date" id="log-date"></p>
+        </div>
+
+        <div class="mood-row" id="mood-btns"></div>
+
+        <div class="section-label">What's influencing it?</div>
+        <div class="tags-row" id="log-tags"></div>
+
+        <div class="section-label">
+          Note <span class="section-opt">— optional</span>
+        </div>
+        <div class="note-wrap">
+          <textarea
+            class="note-area"
+            id="note-input"
+            placeholder="How was your day…"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <button class="save-btn" onclick="saveEntry()">Save entry</button>
+
+        <div class="divider"></div>
+        <div class="recent-header">Recent</div>
+        <div id="recent-list"></div>
+        <div style="height: 24px"></div>
+      </div>
+
+      <!-- ── HISTORY ── -->
+      <div class="view" id="tab-history">
+        <div class="hist-header">
+          <p class="hist-title">History</p>
+        </div>
+        <div class="stats-section" id="stats-section" style="display: none">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-label">Avg mood</div>
+              <div class="stat-val" id="stat-avg">—</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Entries</div>
+              <div class="stat-val" id="stat-count">0</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Top tag</div>
+              <div
+                class="stat-val"
+                id="stat-tag"
+                style="font-size: 14px; letter-spacing: 0"
+              >
+                —
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hist-list" id="hist-list"></div>
+        <div style="height: 24px"></div>
+      </div>
+
+      <!-- ── HEATMAP ── -->
+      <div class="view" id="tab-heatmap">
+        <div class="hm-header">
+          <p class="hm-title">Heatmap</p>
+          <div class="hm-toggle">
+            <button
+              class="hm-toggle-btn active"
+              id="hm-btn-month"
+              onclick="setHmMode('month')"
+            >
+              Month
+            </button>
+            <button
+              class="hm-toggle-btn"
+              id="hm-btn-year"
+              onclick="setHmMode('year')"
+            >
+              Year
+            </button>
+          </div>
+        </div>
+
+        <div class="hm-nav">
+          <button class="hm-nav-btn" onclick="hmPrev()">
+            <i class="ti ti-chevron-left"></i>
+          </button>
+          <span class="hm-period" id="hm-period"></span>
+          <button class="hm-nav-btn" onclick="hmNext()">
+            <i class="ti ti-chevron-right"></i>
+          </button>
+        </div>
+
+        <div id="hm-month-view" class="hm-month-wrap">
+          <div class="hm-day-labels">
+            <span class="hm-day-label">M</span
+            ><span class="hm-day-label">T</span>
+            <span class="hm-day-label">W</span
+            ><span class="hm-day-label">T</span>
+            <span class="hm-day-label">F</span
+            ><span class="hm-day-label">S</span>
+            <span class="hm-day-label">S</span>
+          </div>
+          <div class="hm-grid" id="hm-grid"></div>
+        </div>
+
+        <div id="hm-year-view" class="hm-year-wrap" style="display: none">
+          <div class="hm-months-grid" id="hm-months-grid"></div>
+        </div>
+
+        <div class="hm-legend" id="hm-legend"></div>
+        <div style="height: 24px"></div>
+      </div>
+
+      <!-- ── SETTINGS OVERLAY ── -->
+      <div
+        class="settings-overlay"
+        id="settings-overlay"
+        onclick="overlayClick(event)"
+      >
+        <div class="settings-sheet" id="settings-sheet">
+          <div class="settings-drag-handle"></div>
+          <div class="settings-header">
+            <span class="settings-title">Settings</span>
+            <button class="settings-close-btn" onclick="closeSettings()">
+              <i class="ti ti-x"></i>
+            </button>
+          </div>
+
+          <div class="settings-body">
+            <div class="settings-group-label">Appearance</div>
+            <div class="settings-card">
+              <div class="srow">
+                <span class="srow-label">Theme</span>
+                <div class="theme-btns">
+                  <button
+                    id="theme-btn-light"
+                    class="theme-btn"
+                    onclick="setTheme('light')"
+                  >
+                    <i class="ti ti-sun"></i> Light
+                  </button>
+                  <button
+                    id="theme-btn-dark"
+                    class="theme-btn"
+                    onclick="setTheme('dark')"
+                  >
+                    <i class="ti ti-moon"></i> Dark
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="settings-group-label">Moods</div>
+            <div class="settings-card" id="mood-settings-list"></div>
+
+            <div class="settings-group-label">Tags</div>
+            <div class="settings-card">
+              <div class="tag-chips" id="settings-tag-chips"></div>
+              <div class="tag-add-row">
+                <input
+                  class="tag-add-input"
+                  type="text"
+                  id="tag-add-input"
+                  placeholder="New tag…"
+                  maxlength="20"
+                  onkeydown="if (event.key === 'Enter') addSettingsTag();"
+                />
+                <button class="tag-add-btn" onclick="addSettingsTag()">
+                  Add
+                </button>
+              </div>
+            </div>
+
+            <button class="reset-defaults-btn" onclick="resetDefaults()">
+              <i class="ti ti-refresh"></i> Reset to defaults
+            </button>
+
+            <div style="height: 36px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+    <div class="hm-tooltip" id="hm-tooltip"></div>
+
+    <script>
+      // ── Defaults ──────────────────────────────────────────────────────────────
+      const DEFAULT_MOODS = [
+        {
+          name: "Awful",
+          icon: "ti-mood-sad",
+          bg: "#FCEBEB",
+          border: "#F09595",
+        },
+        {
+          name: "Bad",
+          icon: "ti-mood-confuzed",
+          bg: "#FAEEDA",
+          border: "#EF9F27",
+        },
+        {
+          name: "Okay",
+          icon: "ti-mood-neutral",
+          bg: "#F1EFE8",
+          border: "#888780",
+        },
+        {
+          name: "Good",
+          icon: "ti-mood-smile",
+          bg: "#E1F5EE",
+          border: "#1D9E75",
+        },
+        {
+          name: "Great",
+          icon: "ti-mood-happy",
+          bg: "#EEEDFE",
+          border: "#7F77DD",
+        },
+      ];
+      const DEFAULT_TAGS = [
+        "Work",
+        "Family",
+        "Friends",
+        "Food",
+        "Boyfriend",
+        "Sleep",
+        "Exercise",
+        "Weather",
+        "Stress",
+        "Social",
+      ];
+      const MOOD_ICONS = [
+        "ti-mood-sad-dizzy",
+        "ti-mood-cry",
+        "ti-mood-sad",
+        "ti-mood-confuzed",
+        "ti-mood-empty",
+        "ti-mood-unamused",
+        "ti-mood-neutral",
+        "ti-mood-tongue",
+        "ti-mood-smile",
+        "ti-mood-smile-beam",
+        "ti-mood-happy",
+        "ti-mood-wink",
+        "ti-mood-crazy-happy",
+        "ti-mood-heart",
+        "ti-mood-kid",
+        "ti-mood-star",
+      ];
+
+      const MONTHS = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+      const MONTHS_S = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+      const DAYS_S = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+
+      // ── Settings ──────────────────────────────────────────────────────────────
+      function defaultSettings() {
+        return {
+          theme: "light",
+          moods: JSON.parse(JSON.stringify(DEFAULT_MOODS)),
+          tags: [...DEFAULT_TAGS],
+        };
+      }
+      function loadSettings() {
+        try {
+          return (
+            JSON.parse(localStorage.getItem("imfine_settings") || "null") ||
+            defaultSettings()
+          );
+        } catch {
+          return defaultSettings();
+        }
+      }
+      function saveSettings() {
+        localStorage.setItem("imfine_settings", JSON.stringify(settings));
+      }
+
+      let settings = loadSettings();
+      function MOODS() {
+        return settings.moods;
+      }
+
+      function borderToBg(hex) {
+        const r = parseInt(hex.slice(1, 3), 16),
+          g = parseInt(hex.slice(3, 5), 16),
+          b = parseInt(hex.slice(5, 7), 16);
+        const f = 0.13,
+          h = (n) =>
+            Math.round(n * f + 255 * (1 - f))
+              .toString(16)
+              .padStart(2, "0");
+        return "#" + h(r) + h(g) + h(b);
+      }
+
+      function applySettings() {
+        document.documentElement.setAttribute("data-theme", settings.theme);
+        document
+          .getElementById("theme-btn-light")
+          .classList.toggle("active", settings.theme === "light");
+        document
+          .getElementById("theme-btn-dark")
+          .classList.toggle("active", settings.theme === "dark");
+        renderMoodBtns();
+        renderLogTags();
+        renderHeatmapLegend();
+      }
+
+      // ── State ──────────────────────────────────────────────────────────────────
+      let entries = [];
+      let dayEntriesMap = {};
+      let selectedMood = null;
+      let hmMode = "month";
+      let hmYear = new Date().getFullYear();
+      let hmMonth = new Date().getMonth();
+
+      // ── Boot ──────────────────────────────────────────────────────────────────
+      async function boot() {
+        applySettings();
+        try {
+          const res = await fetch("/api/entries");
+          entries = await res.json();
+        } catch {
+          entries = [];
+        }
+        setupHmTooltip();
+        updateLogDate();
+        renderRecent();
+        renderHistory();
+        renderHeatmap();
+      }
+      boot();
+
+      // ── Log tab ───────────────────────────────────────────────────────────────
+      function updateLogDate() {
+        const d = new Date();
+        const day = [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ][d.getDay()];
+        document.getElementById("log-date").textContent =
+          day + ", " + d.getDate() + " " + MONTHS[d.getMonth()];
+      }
+
+      function renderMoodBtns() {
+        document.getElementById("mood-btns").innerHTML = MOODS()
+          .map(
+            (m, i) =>
+              `<button class="mood-btn${selectedMood === i ? " selected" : ""}" onclick="pickMood(${i})">
+      <div class="mood-dot" style="border-color:${m.border};background:${m.bg}">
+        <i class="ti ${m.icon}" style="color:${m.border}"></i></div>
+      <span class="mood-label">${m.name}</span>
+    </button>`,
+          )
+          .join("");
+      }
+
+      function renderLogTags() {
+        document.getElementById("log-tags").innerHTML = settings.tags
+          .map(
+            (t) =>
+              `<button class="tag" onclick="toggleTag(this)">${esc(t)}</button>`,
+          )
+          .join("");
+      }
+
+      function pickMood(idx) {
+        selectedMood = idx;
+        document
+          .querySelectorAll("#mood-btns .mood-btn")
+          .forEach((b, i) => b.classList.toggle("selected", i === idx));
+      }
+
+      function toggleTag(el) {
+        el.classList.toggle("on");
+      }
+
+      async function saveEntry() {
+        if (selectedMood === null) {
+          showToast("Pick a mood first");
+          return;
+        }
+        const tags = [...document.querySelectorAll("#log-tags .tag.on")].map(
+          (t) => t.textContent,
+        );
+        const note = document.getElementById("note-input").value.trim();
+        const entry = {
+          id: Date.now(),
+          ts: new Date().toISOString(),
+          mood: selectedMood,
+          tags,
+          note,
+        };
+        try {
+          const res = await fetch("/api/entries", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(entry),
+          });
+          entries = await res.json();
+        } catch {
+          entries.unshift(entry);
+        }
+        selectedMood = null;
+        renderMoodBtns();
+        document
+          .querySelectorAll("#log-tags .tag")
+          .forEach((t) => t.classList.remove("on"));
+        document.getElementById("note-input").value = "";
+        showToast("Entry saved");
+        renderRecent();
+        renderHistory();
+        renderHeatmap();
+      }
+
+      // ── Date helpers ──────────────────────────────────────────────────────────
+      function entryTimeParts(isoStr) {
+        const d = new Date(isoStr),
+          now = new Date();
+        const diffDays = Math.round(
+          (new Date(now.getFullYear(), now.getMonth(), now.getDate()) -
+            new Date(d.getFullYear(), d.getMonth(), d.getDate())) /
+            86400000,
+        );
+        let datePart;
+        if (diffDays === 0) datePart = "Today";
+        else if (diffDays === 1) datePart = "Yesterday";
+        else
+          datePart =
+            DAYS_S[(d.getDay() + 6) % 7] +
+            ", " +
+            d.getDate() +
+            " " +
+            MONTHS_S[d.getMonth()];
+        const h = d.getHours();
+        const period =
+          h < 12
+            ? "Morning"
+            : h < 17
+              ? "Afternoon"
+              : h < 21
+                ? "Evening"
+                : "Night";
+        return { datePart, period };
+      }
+
+      // ── Render helpers ────────────────────────────────────────────────────────
+      function entryRowHTML(e) {
+        const m = MOODS()[e.mood];
+        const { datePart, period } = entryTimeParts(e.ts);
+        return `<div class="entry-row">
+    <div class="entry-dot" style="background:${m.border}"></div>
+    <div class="entry-body">
+      <div class="entry-top">
+        <span class="entry-mood">${m.name}</span>
+        <span class="entry-time">${esc(datePart)}<br>${period}</span>
+      </div>
+      ${e.tags.length ? `<div class="entry-tags">${esc(e.tags.join(" · "))}</div>` : ""}
+      ${e.note ? `<div class="entry-note">${esc(e.note)}</div>` : ""}
+    </div>
+  </div>`;
+      }
+
+      function renderRecent() {
+        const el = document.getElementById("recent-list");
+        if (!entries.length) {
+          el.innerHTML =
+            '<div class="empty" style="padding:20px 20px 8px;">No entries yet</div>';
+          return;
+        }
+        el.innerHTML = entries
+          .slice(0, 3)
+          .map(
+            (e, i, arr) =>
+              entryRowHTML(e) +
+              (i < arr.length - 1 ? '<div class="divider"></div>' : ""),
+          )
+          .join("");
+      }
+
+      // ── History tab ───────────────────────────────────────────────────────────
+      function renderHistory() {
+        const list = document.getElementById("hist-list");
+        const stats = document.getElementById("stats-section");
+        if (!entries.length) {
+          list.innerHTML =
+            '<div class="empty">No entries yet.<br>Start by logging your mood.</div>';
+          stats.style.display = "none";
+          return;
+        }
+        list.innerHTML = entries
+          .map((e) => {
+            const m = MOODS()[e.mood];
+            const { datePart, period } = entryTimeParts(e.ts);
+            return `<div class="hist-entry">
+      <div class="hist-dot" style="background:${m.border}"></div>
+      <div class="hist-body">
+        <div class="hist-top">
+          <span class="hist-mood">${m.name}</span>
+          <span class="hist-time">${esc(datePart)}<br>${period}</span>
+        </div>
+        ${e.tags.length ? `<div class="hist-tags">${esc(e.tags.join(" · "))}</div>` : ""}
+        ${e.note ? `<div class="hist-note">${esc(e.note)}</div>` : ""}
+      </div>
+    </div>`;
+          })
+          .join("");
+        const avg = (
+          entries.reduce((s, e) => s + e.mood, 0) / entries.length +
+          1
+        ).toFixed(1);
+        document.getElementById("stat-avg").textContent = avg;
+        document.getElementById("stat-count").textContent = entries.length;
+        const tagCounts = {};
+        entries.forEach((e) =>
+          e.tags.forEach((t) => (tagCounts[t] = (tagCounts[t] || 0) + 1)),
+        );
+        const top = Object.entries(tagCounts).sort((a, b) => b[1] - a[1])[0];
+        document.getElementById("stat-tag").textContent = top ? top[0] : "—";
+        stats.style.display = "block";
+      }
+
+      // ── Heatmap tab ───────────────────────────────────────────────────────────
+      function renderHeatmapLegend() {
+        const noEntryBg = settings.theme === "dark" ? "#38383A" : "#E8E7E3";
+        document.getElementById("hm-legend").innerHTML =
+          MOODS()
+            .map(
+              (m) =>
+                `<div class="hm-legend-dot" style="background:${m.border};"></div>${esc(m.name)}`,
+            )
+            .join("") +
+          `<div class="hm-legend-sep"></div><div class="hm-legend-dot" style="background:${noEntryBg};"></div>No entry`;
+      }
+
+      function setHmMode(mode) {
+        hmMode = mode;
+        document
+          .getElementById("hm-btn-month")
+          .classList.toggle("active", mode === "month");
+        document
+          .getElementById("hm-btn-year")
+          .classList.toggle("active", mode === "year");
+        document.getElementById("hm-month-view").style.display =
+          mode === "month" ? "block" : "none";
+        document.getElementById("hm-year-view").style.display =
+          mode === "year" ? "block" : "none";
+        renderHeatmap();
+      }
+
+      function hmPrev() {
+        if (hmMode === "month") {
+          hmMonth--;
+          if (hmMonth < 0) {
+            hmMonth = 11;
+            hmYear--;
+          }
+        } else hmYear--;
+        renderHeatmap();
+      }
+      function hmNext() {
+        if (hmMode === "month") {
+          hmMonth++;
+          if (hmMonth > 11) {
+            hmMonth = 0;
+            hmYear++;
+          }
+        } else hmYear++;
+        renderHeatmap();
+      }
+
+      function buildDayMap() {
+        const map = {};
+        entries.forEach((e) => {
+          const d = new Date(e.ts);
+          const key = d.getFullYear() + "-" + d.getMonth() + "-" + d.getDate();
+          if (map[key] === undefined || e.mood > map[key]) map[key] = e.mood;
+        });
+        return map;
+      }
+
+      function buildDayEntriesMap() {
+        const map = {};
+        entries.forEach((e) => {
+          const d = new Date(e.ts);
+          const key = d.getFullYear() + "-" + d.getMonth() + "-" + d.getDate();
+          if (!map[key]) map[key] = [];
+          map[key].push(e);
+        });
+        return map;
+      }
+
+      function hmCellStyle(mood) {
+        if (mood === undefined)
+          return settings.theme === "dark"
+            ? "background:#38383A;"
+            : "background:#E8E7E3;";
+        return `background:${MOODS()[mood].border};`;
+      }
+
+      function renderHeatmap() {
+        dayEntriesMap = buildDayEntriesMap();
+        if (hmMode === "month") renderMonthHm();
+        else renderYearHm();
+        renderHeatmapLegend();
+      }
+
+      function renderMonthHm() {
+        document.getElementById("hm-period").textContent =
+          MONTHS[hmMonth] + " " + hmYear;
+        const dayMap = buildDayMap();
+        const daysInMo = new Date(hmYear, hmMonth + 1, 0).getDate();
+        const offset = (new Date(hmYear, hmMonth, 1).getDay() + 6) % 7;
+        let html = "";
+        for (let i = 0; i < offset; i++)
+          html +=
+            '<div class="hm-cell" style="background:transparent;pointer-events:none;"></div>';
+        for (let d = 1; d <= daysInMo; d++) {
+          const key = hmYear + "-" + hmMonth + "-" + d,
+            mood = dayMap[key];
+          const hasMood = mood !== undefined;
+          html += `<div class="hm-cell${hasMood ? " has-data" : ""}" style="${hmCellStyle(mood)}" data-day="${key}"></div>`;
+        }
+        document.getElementById("hm-grid").innerHTML = html;
+      }
+
+      function renderYearHm() {
+        document.getElementById("hm-period").textContent = String(hmYear);
+        const dayMap = buildDayMap();
+        let html = "";
+        for (let m = 0; m < 12; m++) {
+          const daysInMo = new Date(hmYear, m + 1, 0).getDate();
+          const offset = (new Date(hmYear, m, 1).getDay() + 6) % 7;
+          let cells = "";
+          for (let i = 0; i < offset; i++)
+            cells +=
+              '<div class="hm-mini-cell" style="background:transparent;"></div>';
+          for (let d = 1; d <= daysInMo; d++) {
+            const key = hmYear + "-" + m + "-" + d,
+              mood = dayMap[key];
+            cells += `<div class="hm-mini-cell${mood !== undefined ? " has-data" : ""}" style="${hmCellStyle(mood)}" data-day="${key}"></div>`;
+          }
+          html += `<div class="hm-month-block"><div class="hm-month-name">${MONTHS_S[m]}</div><div class="hm-mini-grid">${cells}</div></div>`;
+        }
+        document.getElementById("hm-months-grid").innerHTML = html;
+      }
+
+      // ── Heatmap tooltip ───────────────────────────────────────────────────────
+      function setupHmTooltip() {
+        const tab = document.getElementById("tab-heatmap");
+        tab.addEventListener("mouseover", (e) => {
+          const cell = e.target.closest("[data-day]");
+          if (cell && cell.classList.contains("has-data"))
+            showHmTooltip(cell, cell.dataset.day);
+          else if (!e.target.closest("#hm-tooltip")) hideHmTooltip();
+        });
+        tab.addEventListener("mouseleave", hideHmTooltip);
+      }
+
+      function showHmTooltip(cell, key) {
+        const dayEntries = dayEntriesMap[key];
+        if (!dayEntries || !dayEntries.length) return;
+
+        const [y, m, d] = key.split("-").map(Number);
+        const date = new Date(y, m, d);
+        const dateStr =
+          DAYS_S[(date.getDay() + 6) % 7] + ", " + d + " " + MONTHS_S[m];
+
+        const tip = document.getElementById("hm-tooltip");
+        tip.innerHTML =
+          `<div class="hmt-date">${dateStr}</div>` +
+          dayEntries
+            .map((e, i) => {
+              const mood = MOODS()[e.mood];
+              const { period } = entryTimeParts(e.ts);
+              return `${i > 0 ? '<div class="hmt-sep"></div>' : ""}
+        <div class="hmt-entry">
+          <div class="hmt-mood-row">
+            <span class="hmt-dot" style="background:${mood.border}"></span>
+            <span class="hmt-mood-name">${mood.name}</span>
+            <span class="hmt-period">${period}</span>
+          </div>
+          ${e.tags.length ? `<div class="hmt-tags">${esc(e.tags.join(" · "))}</div>` : ""}
+          ${e.note ? `<div class="hmt-note">${esc(e.note)}</div>` : ""}
+        </div>`;
+            })
+            .join("");
+
+        tip.style.visibility = "hidden";
+        tip.style.display = "block";
+
+        const tipRect = tip.getBoundingClientRect();
+        const cellRect = cell.getBoundingClientRect();
+
+        let top = cellRect.top - tipRect.height - 10;
+        let left = cellRect.left + cellRect.width / 2 - tipRect.width / 2;
+
+        if (top < 8) top = cellRect.bottom + 10;
+        left = Math.max(
+          8,
+          Math.min(left, window.innerWidth - tipRect.width - 8),
+        );
+
+        tip.style.top = top + "px";
+        tip.style.left = left + "px";
+        tip.style.visibility = "visible";
+      }
+
+      function hideHmTooltip() {
+        const tip = document.getElementById("hm-tooltip");
+        tip.style.display = "none";
+      }
+
+      // ── Tab switching ─────────────────────────────────────────────────────────
+      function switchTab(name, btn) {
+        document
+          .querySelectorAll(".view")
+          .forEach((v) => v.classList.remove("active"));
+        document
+          .querySelectorAll(".tab-item")
+          .forEach((t) => t.classList.remove("active"));
+        document.getElementById("tab-" + name).classList.add("active");
+        btn.classList.add("active");
+      }
+
+      // ── Settings panel ────────────────────────────────────────────────────────
+      function openSettings() {
+        renderMoodSettingsList();
+        renderSettingsTagChips();
+        document.getElementById("settings-overlay").classList.add("open");
+      }
+      function closeSettings() {
+        document.getElementById("settings-overlay").classList.remove("open");
+      }
+      function overlayClick(e) {
+        if (e.target === document.getElementById("settings-overlay"))
+          closeSettings();
+      }
+
+      function setTheme(t) {
+        settings.theme = t;
+        saveSettings();
+        applySettings();
+        renderHeatmap();
+      }
+
+      // Mood settings
+      function renderMoodSettingsList() {
+        document.getElementById("mood-settings-list").innerHTML = settings.moods
+          .map(
+            (m, i) => `
+    <div class="msr-row" id="msr-row-${i}">
+      <div class="msr-icon-wrap">
+        <button class="msr-icon-btn" onclick="toggleIconPicker(${i}, event)" style="color:${m.border}">
+          <i class="ti ${m.icon}" id="msr-icon-${i}"></i>
+        </button>
+        <div class="icon-picker-grid" id="icon-picker-${i}">
+          ${MOOD_ICONS.map(
+            (ic) =>
+              `<button class="icon-pick-btn${m.icon === ic ? " picked" : ""}" onclick="pickIcon(${i},'${ic}')" title="${ic.replace("ti-mood-", "")}">
+              <i class="ti ${ic}"></i>
+            </button>`,
+          ).join("")}
+        </div>
+      </div>
+      <span class="msr-name">${esc(m.name)}</span>
+      <input type="color" class="msr-color-input" value="${m.border}"
+        oninput="updateMoodColor(${i}, this.value)"
+        title="Accent color">
+    </div>
+  `,
+          )
+          .join('<div class="msr-divider"></div>');
+      }
+
+      function toggleIconPicker(idx, e) {
+        e.stopPropagation();
+        const grid = document.getElementById("icon-picker-" + idx);
+        const isOpen = grid.classList.contains("open");
+        document
+          .querySelectorAll(".icon-picker-grid.open")
+          .forEach((g) => g.classList.remove("open"));
+        if (!isOpen) grid.classList.add("open");
+      }
+
+      document.addEventListener("click", () => {
+        document
+          .querySelectorAll(".icon-picker-grid.open")
+          .forEach((g) => g.classList.remove("open"));
+      });
+
+      function pickIcon(idx, icon) {
+        settings.moods[idx].icon = icon;
+        saveSettings();
+        applySettings();
+        renderMoodSettingsList();
+      }
+
+      function updateMoodColor(idx, hex) {
+        settings.moods[idx].border = hex;
+        settings.moods[idx].bg = borderToBg(hex);
+        saveSettings();
+        applySettings();
+        renderHeatmap();
+        const iconBtn = document.querySelector(`#msr-row-${idx} .msr-icon-btn`);
+        if (iconBtn) iconBtn.style.color = hex;
+      }
+
+      // Tag settings
+      function renderSettingsTagChips() {
+        document.getElementById("settings-tag-chips").innerHTML = settings.tags
+          .map(
+            (t, i) =>
+              `<span class="settings-tag-chip">
+      ${esc(t)}
+      <button class="chip-remove" onclick="removeSettingsTag(${i})" aria-label="Remove">
+        <i class="ti ti-x"></i>
+      </button>
+    </span>`,
+          )
+          .join("");
+      }
+
+      function addSettingsTag() {
+        const input = document.getElementById("tag-add-input");
+        const val = input.value.trim();
+        if (!val || settings.tags.includes(val)) {
+          input.value = "";
+          return;
+        }
+        settings.tags.push(val);
+        saveSettings();
+        renderSettingsTagChips();
+        renderLogTags();
+        input.value = "";
+      }
+
+      function removeSettingsTag(idx) {
+        settings.tags.splice(idx, 1);
+        saveSettings();
+        renderSettingsTagChips();
+        renderLogTags();
+      }
+
+      function resetDefaults() {
+        settings = defaultSettings();
+        saveSettings();
+        applySettings();
+        renderMoodSettingsList();
+        renderSettingsTagChips();
+        renderHeatmap();
+        showToast("Reset to defaults");
+      }
+
+      // ── Utils ─────────────────────────────────────────────────────────────────
+      function esc(s) {
+        return String(s)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+      function showToast(msg) {
+        const t = document.getElementById("toast");
+        t.textContent = msg;
+        t.classList.add("show");
+        clearTimeout(t._timer);
+        t._timer = setTimeout(() => t.classList.remove("show"), 2000);
+      }
+    </script>
+  </body>
+</html>

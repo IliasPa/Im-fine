@@ -1,0 +1,2038 @@
+{
+  "entries": [
+    {
+      "id": 1779338867518,
+      "ts": "2026-05-21T04:47:47.518Z",
+      "mood": 2,
+      "tags": [
+        "Exercise"
+      ],
+      "note": "sdfs"
+    },
+    {
+      "id": 1779331916531,
+      "ts": "2026-05-21T02:51:56.531Z",
+      "mood": 4,
+      "tags": [
+        "Food",
+        "Boyfriend"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331890754,
+      "ts": "2026-05-21T02:51:30.754Z",
+      "mood": 3,
+      "tags": [
+        "Boyfriend"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916532,
+      "ts": "2026-05-18T05:11:40.000Z",
+      "mood": 3,
+      "tags": [
+        "Family",
+        "Weather"
+      ],
+      "note": "Laughed a lot today."
+    },
+    {
+      "id": 1779331916533,
+      "ts": "2026-05-13T19:08:01.000Z",
+      "mood": 4,
+      "tags": [
+        "Food",
+        "Boyfriend",
+        "Work"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916534,
+      "ts": "2026-05-09T17:10:27.000Z",
+      "mood": 4,
+      "tags": [
+        "Stress",
+        "Work"
+      ],
+      "note": "Spent quality time with boyfriend."
+    },
+    {
+      "id": 1779331916535,
+      "ts": "2026-05-08T15:56:16.000Z",
+      "mood": 2,
+      "tags": [
+        "Work",
+        "Weather",
+        "Exercise"
+      ],
+      "note": "Need more rest."
+    },
+    {
+      "id": 1779331916536,
+      "ts": "2026-05-06T18:12:53.000Z",
+      "mood": 2,
+      "tags": [
+        "Social",
+        "Exercise"
+      ],
+      "note": "Long day but productive."
+    },
+    {
+      "id": 1779331916537,
+      "ts": "2026-05-05T16:33:30.000Z",
+      "mood": 4,
+      "tags": [
+        "Boyfriend"
+      ],
+      "note": "Need more rest."
+    },
+    {
+      "id": 1779331916538,
+      "ts": "2026-05-04T16:31:20.000Z",
+      "mood": 4,
+      "tags": [
+        "Exercise",
+        "Stress",
+        "Social"
+      ],
+      "note": "Great conversation with mum."
+    },
+    {
+      "id": 1779331916539,
+      "ts": "2026-05-03T05:06:35.000Z",
+      "mood": 4,
+      "tags": [
+        "Social",
+        "Friends",
+        "Sleep"
+      ],
+      "note": "Anxious for no reason."
+    },
+    {
+      "id": 1779331916540,
+      "ts": "2026-04-30T07:01:34.000Z",
+      "mood": 4,
+      "tags": [
+        "Boyfriend"
+      ],
+      "note": "Need more rest."
+    },
+    {
+      "id": 1779331916541,
+      "ts": "2026-04-29T10:25:38.000Z",
+      "mood": 2,
+      "tags": [
+        "Work"
+      ],
+      "note": "Made a delicious meal."
+    },
+    {
+      "id": 1779331916542,
+      "ts": "2026-04-28T16:59:04.000Z",
+      "mood": 4,
+      "tags": [
+        "Friends"
+      ],
+      "note": "Need more rest."
+    },
+    {
+      "id": 1779331916543,
+      "ts": "2026-04-26T17:05:18.000Z",
+      "mood": 4,
+      "tags": [
+        "Exercise"
+      ],
+      "note": "Feeling tired but content."
+    },
+    {
+      "id": 1779331916544,
+      "ts": "2026-04-24T20:02:13.000Z",
+      "mood": 3,
+      "tags": [
+        "Weather",
+        "Exercise"
+      ],
+      "note": "Really good day overall."
+    },
+    {
+      "id": 1779331916545,
+      "ts": "2026-04-23T05:21:53.000Z",
+      "mood": 3,
+      "tags": [
+        "Weather"
+      ],
+      "note": "Nice walk in the park."
+    },
+    {
+      "id": 1779331916546,
+      "ts": "2026-04-21T16:45:27.000Z",
+      "mood": 3,
+      "tags": [
+        "Social",
+        "Weather"
+      ],
+      "note": "Laughed a lot today."
+    },
+    {
+      "id": 1779331916547,
+      "ts": "2026-04-19T06:17:37.000Z",
+      "mood": 1,
+      "tags": [
+        "Exercise"
+      ],
+      "note": "Work was overwhelming today."
+    },
+    {
+      "id": 1779331916548,
+      "ts": "2026-04-18T19:30:23.000Z",
+      "mood": 3,
+      "tags": [
+        "Sleep",
+        "Work"
+      ],
+      "note": "Low energy all day."
+    },
+    {
+      "id": 1779331916549,
+      "ts": "2026-04-16T07:54:29.000Z",
+      "mood": 3,
+      "tags": [
+        "Food",
+        "Friends",
+        "Exercise"
+      ],
+      "note": "Tough morning, better afternoon."
+    },
+    {
+      "id": 1779331916550,
+      "ts": "2026-04-14T18:06:05.000Z",
+      "mood": 2,
+      "tags": [
+        "Exercise"
+      ],
+      "note": "Low energy all day."
+    },
+    {
+      "id": 1779331916551,
+      "ts": "2026-04-12T15:04:22.000Z",
+      "mood": 1,
+      "tags": [
+        "Food",
+        "Social"
+      ],
+      "note": "Weather was miserable."
+    },
+    {
+      "id": 1779331916552,
+      "ts": "2026-04-09T06:38:29.000Z",
+      "mood": 3,
+      "tags": [
+        "Exercise"
+      ],
+      "note": "Exercise gave me a boost."
+    },
+    {
+      "id": 1779331916553,
+      "ts": "2026-04-08T06:34:50.000Z",
+      "mood": 1,
+      "tags": [
+        "Boyfriend",
+        "Sleep"
+      ],
+      "note": "Sweet evening at home."
+    },
+    {
+      "id": 1779331916554,
+      "ts": "2026-04-06T19:55:15.000Z",
+      "mood": 4,
+      "tags": [
+        "Family",
+        "Sleep",
+        "Exercise"
+      ],
+      "note": "Really good day overall."
+    },
+    {
+      "id": 1779331916555,
+      "ts": "2026-04-05T17:15:53.000Z",
+      "mood": 1,
+      "tags": [
+        "Food",
+        "Sleep"
+      ],
+      "note": "Struggled to focus."
+    },
+    {
+      "id": 1779331916556,
+      "ts": "2026-04-03T10:44:16.000Z",
+      "mood": 0,
+      "tags": [
+        "Exercise"
+      ],
+      "note": "Spent quality time with boyfriend."
+    },
+    {
+      "id": 1779331916557,
+      "ts": "2026-04-02T16:31:39.000Z",
+      "mood": 2,
+      "tags": [
+        "Exercise",
+        "Weather"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916558,
+      "ts": "2026-03-31T07:32:33.000Z",
+      "mood": 2,
+      "tags": [
+        "Friends",
+        "Boyfriend",
+        "Sleep"
+      ],
+      "note": "Gym session helped a lot."
+    },
+    {
+      "id": 1779331916559,
+      "ts": "2026-03-29T15:51:56.000Z",
+      "mood": 4,
+      "tags": [
+        "Family"
+      ],
+      "note": "Need more rest."
+    },
+    {
+      "id": 1779331916560,
+      "ts": "2026-03-28T11:11:39.000Z",
+      "mood": 4,
+      "tags": [
+        "Exercise"
+      ],
+      "note": "Spent quality time with boyfriend."
+    },
+    {
+      "id": 1779331916561,
+      "ts": "2026-03-27T07:02:07.000Z",
+      "mood": 1,
+      "tags": [
+        "Friends",
+        "Stress",
+        "Food"
+      ],
+      "note": "Low energy all day."
+    },
+    {
+      "id": 1779331916562,
+      "ts": "2026-03-26T16:03:36.000Z",
+      "mood": 2,
+      "tags": [
+        "Work",
+        "Exercise",
+        "Family"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916563,
+      "ts": "2026-03-25T10:32:47.000Z",
+      "mood": 4,
+      "tags": [
+        "Work",
+        "Exercise"
+      ],
+      "note": "Low energy all day."
+    },
+    {
+      "id": 1779331916564,
+      "ts": "2026-03-23T10:01:29.000Z",
+      "mood": 0,
+      "tags": [
+        "Food"
+      ],
+      "note": "Struggled to focus."
+    },
+    {
+      "id": 1779331916565,
+      "ts": "2026-03-21T11:50:09.000Z",
+      "mood": 3,
+      "tags": [
+        "Family"
+      ],
+      "note": "Nice walk in the park."
+    },
+    {
+      "id": 1779331916566,
+      "ts": "2026-03-17T05:36:10.000Z",
+      "mood": 2,
+      "tags": [
+        "Work",
+        "Food"
+      ],
+      "note": "Sweet evening at home."
+    },
+    {
+      "id": 1779331916567,
+      "ts": "2026-03-16T06:32:19.000Z",
+      "mood": 0,
+      "tags": [
+        "Weather"
+      ],
+      "note": "Friends made everything better."
+    },
+    {
+      "id": 1779331916568,
+      "ts": "2026-03-13T11:30:44.000Z",
+      "mood": 2,
+      "tags": [
+        "Friends",
+        "Exercise",
+        "Stress"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916569,
+      "ts": "2026-03-12T18:12:49.000Z",
+      "mood": 2,
+      "tags": [
+        "Exercise",
+        "Work"
+      ],
+      "note": "Feeling tired but content."
+    },
+    {
+      "id": 1779331916570,
+      "ts": "2026-03-11T05:29:38.000Z",
+      "mood": 4,
+      "tags": [
+        "Stress"
+      ],
+      "note": "Made a delicious meal."
+    },
+    {
+      "id": 1779331916571,
+      "ts": "2026-03-10T05:59:57.000Z",
+      "mood": 3,
+      "tags": [
+        "Food",
+        "Exercise"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916572,
+      "ts": "2026-03-08T05:01:19.000Z",
+      "mood": 0,
+      "tags": [
+        "Food",
+        "Friends",
+        "Family"
+      ],
+      "note": "Finally caught up on sleep."
+    },
+    {
+      "id": 1779331916573,
+      "ts": "2026-03-07T19:37:47.000Z",
+      "mood": 4,
+      "tags": [
+        "Friends",
+        "Family"
+      ],
+      "note": "Gym session helped a lot."
+    },
+    {
+      "id": 1779331916574,
+      "ts": "2026-03-06T11:01:02.000Z",
+      "mood": 3,
+      "tags": [
+        "Friends",
+        "Work",
+        "Boyfriend"
+      ],
+      "note": "Work was overwhelming today."
+    },
+    {
+      "id": 1779331916575,
+      "ts": "2026-03-02T18:56:28.000Z",
+      "mood": 3,
+      "tags": [
+        "Work"
+      ],
+      "note": "Great conversation with mum."
+    },
+    {
+      "id": 1779331916576,
+      "ts": "2026-02-25T11:40:39.000Z",
+      "mood": 4,
+      "tags": [
+        "Family",
+        "Social"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916577,
+      "ts": "2026-02-23T10:38:12.000Z",
+      "mood": 2,
+      "tags": [
+        "Sleep",
+        "Weather"
+      ],
+      "note": "Had a lovely dinner with family."
+    },
+    {
+      "id": 1779331916578,
+      "ts": "2026-02-18T17:34:08.000Z",
+      "mood": 2,
+      "tags": [
+        "Food",
+        "Work"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916579,
+      "ts": "2026-02-17T11:59:56.000Z",
+      "mood": 4,
+      "tags": [
+        "Work",
+        "Family",
+        "Exercise"
+      ],
+      "note": "Spent quality time with boyfriend."
+    },
+    {
+      "id": 1779331916580,
+      "ts": "2026-02-16T16:12:42.000Z",
+      "mood": 4,
+      "tags": [
+        "Food"
+      ],
+      "note": "Feeling tired but content."
+    },
+    {
+      "id": 1779331916581,
+      "ts": "2026-02-15T17:42:49.000Z",
+      "mood": 2,
+      "tags": [
+        "Social",
+        "Food",
+        "Sleep"
+      ],
+      "note": "Comfort food fixed everything."
+    },
+    {
+      "id": 1779331916582,
+      "ts": "2026-02-13T18:33:40.000Z",
+      "mood": 4,
+      "tags": [
+        "Work",
+        "Family"
+      ],
+      "note": "Had a lovely dinner with family."
+    },
+    {
+      "id": 1779331916583,
+      "ts": "2026-02-11T07:49:24.000Z",
+      "mood": 3,
+      "tags": [
+        "Work",
+        "Sleep",
+        "Social"
+      ],
+      "note": "Finally caught up on sleep."
+    },
+    {
+      "id": 1779331916584,
+      "ts": "2026-02-09T05:59:28.000Z",
+      "mood": 2,
+      "tags": [
+        "Stress"
+      ],
+      "note": "Anxious for no reason."
+    },
+    {
+      "id": 1779331916585,
+      "ts": "2026-02-08T17:59:40.000Z",
+      "mood": 0,
+      "tags": [
+        "Exercise"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916586,
+      "ts": "2026-02-04T19:53:16.000Z",
+      "mood": 4,
+      "tags": [
+        "Family",
+        "Work"
+      ],
+      "note": "Felt disconnected today."
+    },
+    {
+      "id": 1779331916587,
+      "ts": "2026-02-03T11:01:39.000Z",
+      "mood": 3,
+      "tags": [
+        "Weather"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916588,
+      "ts": "2026-02-01T10:36:58.000Z",
+      "mood": 4,
+      "tags": [
+        "Weather",
+        "Friends"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916589,
+      "ts": "2026-01-31T06:51:45.000Z",
+      "mood": 2,
+      "tags": [
+        "Weather",
+        "Boyfriend"
+      ],
+      "note": "Feeling tired but content."
+    },
+    {
+      "id": 1779331916590,
+      "ts": "2026-01-30T10:19:16.000Z",
+      "mood": 1,
+      "tags": [
+        "Work"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916591,
+      "ts": "2026-01-29T18:16:18.000Z",
+      "mood": 3,
+      "tags": [
+        "Boyfriend",
+        "Food"
+      ],
+      "note": "Stressful meeting but got through it."
+    },
+    {
+      "id": 1779331916592,
+      "ts": "2026-01-27T06:05:31.000Z",
+      "mood": 4,
+      "tags": [
+        "Boyfriend",
+        "Work",
+        "Family"
+      ],
+      "note": "Spent quality time with boyfriend."
+    },
+    {
+      "id": 1779331916593,
+      "ts": "2026-01-26T17:23:40.000Z",
+      "mood": 3,
+      "tags": [
+        "Friends",
+        "Stress"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916594,
+      "ts": "2026-01-24T17:55:22.000Z",
+      "mood": 4,
+      "tags": [
+        "Friends",
+        "Exercise",
+        "Family"
+      ],
+      "note": "Low energy all day."
+    },
+    {
+      "id": 1779331916595,
+      "ts": "2026-01-23T10:26:43.000Z",
+      "mood": 0,
+      "tags": [
+        "Friends",
+        "Weather"
+      ],
+      "note": "Great conversation with mum."
+    },
+    {
+      "id": 1779331916596,
+      "ts": "2026-01-20T19:59:15.000Z",
+      "mood": 4,
+      "tags": [
+        "Friends"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916597,
+      "ts": "2026-01-19T20:00:05.000Z",
+      "mood": 4,
+      "tags": [
+        "Work"
+      ],
+      "note": "Sweet evening at home."
+    },
+    {
+      "id": 1779331916598,
+      "ts": "2026-01-18T16:46:42.000Z",
+      "mood": 1,
+      "tags": [
+        "Boyfriend",
+        "Weather",
+        "Food"
+      ],
+      "note": "Long day but productive."
+    },
+    {
+      "id": 1779331916599,
+      "ts": "2026-01-17T15:21:01.000Z",
+      "mood": 3,
+      "tags": [
+        "Work",
+        "Food",
+        "Social"
+      ],
+      "note": "Sweet evening at home."
+    },
+    {
+      "id": 1779331916600,
+      "ts": "2026-01-16T19:17:52.000Z",
+      "mood": 3,
+      "tags": [
+        "Work"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916601,
+      "ts": "2026-01-11T16:16:18.000Z",
+      "mood": 3,
+      "tags": [
+        "Friends"
+      ],
+      "note": "Stressful meeting but got through it."
+    },
+    {
+      "id": 1779331916602,
+      "ts": "2026-01-07T11:59:35.000Z",
+      "mood": 3,
+      "tags": [
+        "Work",
+        "Boyfriend"
+      ],
+      "note": "Struggled to focus."
+    },
+    {
+      "id": 1779331916603,
+      "ts": "2026-01-05T19:26:10.000Z",
+      "mood": 4,
+      "tags": [
+        "Weather",
+        "Exercise",
+        "Stress"
+      ],
+      "note": "Great conversation with mum."
+    },
+    {
+      "id": 1779331916604,
+      "ts": "2026-01-04T10:14:47.000Z",
+      "mood": 0,
+      "tags": [
+        "Food",
+        "Work"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916605,
+      "ts": "2026-01-02T19:41:07.000Z",
+      "mood": 4,
+      "tags": [
+        "Weather"
+      ],
+      "note": "Slept poorly, dragging."
+    },
+    {
+      "id": 1779331916606,
+      "ts": "2026-01-01T06:21:41.000Z",
+      "mood": 2,
+      "tags": [
+        "Work",
+        "Family",
+        "Social"
+      ],
+      "note": "Made a delicious meal."
+    },
+    {
+      "id": 1779331916607,
+      "ts": "2025-12-31T18:15:55.000Z",
+      "mood": 3,
+      "tags": [
+        "Exercise",
+        "Family",
+        "Stress"
+      ],
+      "note": "Rainy day stayed in."
+    },
+    {
+      "id": 1779331916608,
+      "ts": "2025-12-30T05:22:01.000Z",
+      "mood": 2,
+      "tags": [
+        "Family",
+        "Work",
+        "Weather"
+      ],
+      "note": "Sweet evening at home."
+    },
+    {
+      "id": 1779331916609,
+      "ts": "2025-12-29T17:03:44.000Z",
+      "mood": 0,
+      "tags": [
+        "Friends",
+        "Exercise"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916610,
+      "ts": "2025-12-27T15:34:51.000Z",
+      "mood": 4,
+      "tags": [
+        "Work",
+        "Family"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916611,
+      "ts": "2025-12-23T15:55:19.000Z",
+      "mood": 3,
+      "tags": [
+        "Food"
+      ],
+      "note": "Unexpected good news!"
+    },
+    {
+      "id": 1779331916612,
+      "ts": "2025-12-21T07:07:31.000Z",
+      "mood": 1,
+      "tags": [
+        "Friends",
+        "Weather",
+        "Work"
+      ],
+      "note": "Slept poorly, dragging."
+    },
+    {
+      "id": 1779331916613,
+      "ts": "2025-12-20T07:52:57.000Z",
+      "mood": 2,
+      "tags": [
+        "Work"
+      ],
+      "note": "Really good day overall."
+    },
+    {
+      "id": 1779331916614,
+      "ts": "2025-12-18T16:56:37.000Z",
+      "mood": 1,
+      "tags": [
+        "Work",
+        "Sleep",
+        "Social"
+      ],
+      "note": "Long day but productive."
+    },
+    {
+      "id": 1779331916615,
+      "ts": "2025-12-17T10:57:43.000Z",
+      "mood": 1,
+      "tags": [
+        "Family"
+      ],
+      "note": "Big deadline stress today."
+    },
+    {
+      "id": 1779331916616,
+      "ts": "2025-12-15T19:14:13.000Z",
+      "mood": 0,
+      "tags": [
+        "Friends",
+        "Family",
+        "Food"
+      ],
+      "note": "Finally caught up on sleep."
+    },
+    {
+      "id": 1779331916617,
+      "ts": "2025-12-14T10:36:36.000Z",
+      "mood": 3,
+      "tags": [
+        "Work"
+      ],
+      "note": "Low energy all day."
+    },
+    {
+      "id": 1779331916618,
+      "ts": "2025-12-12T15:58:08.000Z",
+      "mood": 1,
+      "tags": [
+        "Weather",
+        "Exercise"
+      ],
+      "note": "Unexpected good news!"
+    },
+    {
+      "id": 1779331916619,
+      "ts": "2025-12-11T05:42:34.000Z",
+      "mood": 4,
+      "tags": [
+        "Sleep",
+        "Food",
+        "Work"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916620,
+      "ts": "2025-12-08T05:58:43.000Z",
+      "mood": 2,
+      "tags": [
+        "Social",
+        "Sleep"
+      ],
+      "note": "Low energy all day."
+    },
+    {
+      "id": 1779331916621,
+      "ts": "2025-12-07T11:13:27.000Z",
+      "mood": 4,
+      "tags": [
+        "Stress"
+      ],
+      "note": "Spent quality time with boyfriend."
+    },
+    {
+      "id": 1779331916622,
+      "ts": "2025-12-06T06:25:50.000Z",
+      "mood": 4,
+      "tags": [
+        "Food"
+      ],
+      "note": "Finally caught up on sleep."
+    },
+    {
+      "id": 1779331916623,
+      "ts": "2025-12-04T16:30:40.000Z",
+      "mood": 4,
+      "tags": [
+        "Work"
+      ],
+      "note": "Had a lovely dinner with family."
+    },
+    {
+      "id": 1779331916624,
+      "ts": "2025-12-02T20:31:58.000Z",
+      "mood": 1,
+      "tags": [
+        "Social"
+      ],
+      "note": "Big deadline stress today."
+    },
+    {
+      "id": 1779331916625,
+      "ts": "2025-11-28T16:10:56.000Z",
+      "mood": 3,
+      "tags": [
+        "Stress",
+        "Exercise"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916626,
+      "ts": "2025-11-27T15:24:18.000Z",
+      "mood": 1,
+      "tags": [
+        "Sleep",
+        "Work",
+        "Family"
+      ],
+      "note": "Need more rest."
+    },
+    {
+      "id": 1779331916627,
+      "ts": "2025-11-26T20:37:39.000Z",
+      "mood": 1,
+      "tags": [
+        "Work",
+        "Stress",
+        "Family"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916628,
+      "ts": "2025-11-25T20:55:06.000Z",
+      "mood": 3,
+      "tags": [
+        "Work",
+        "Friends"
+      ],
+      "note": "Comfort food fixed everything."
+    },
+    {
+      "id": 1779331916629,
+      "ts": "2025-11-21T19:01:57.000Z",
+      "mood": 3,
+      "tags": [
+        "Work",
+        "Boyfriend"
+      ],
+      "note": "Laughed a lot today."
+    },
+    {
+      "id": 1779331916630,
+      "ts": "2025-11-18T19:59:04.000Z",
+      "mood": 1,
+      "tags": [
+        "Food"
+      ],
+      "note": "Great conversation with mum."
+    },
+    {
+      "id": 1779331916631,
+      "ts": "2025-11-17T05:07:36.000Z",
+      "mood": 3,
+      "tags": [
+        "Boyfriend",
+        "Sleep"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916632,
+      "ts": "2025-11-15T11:05:19.000Z",
+      "mood": 2,
+      "tags": [
+        "Food",
+        "Weather",
+        "Work"
+      ],
+      "note": "Tough morning, better afternoon."
+    },
+    {
+      "id": 1779331916633,
+      "ts": "2025-11-14T05:05:04.000Z",
+      "mood": 2,
+      "tags": [
+        "Sleep"
+      ],
+      "note": "Made a delicious meal."
+    },
+    {
+      "id": 1779331916634,
+      "ts": "2025-11-13T18:50:02.000Z",
+      "mood": 0,
+      "tags": [
+        "Exercise",
+        "Social"
+      ],
+      "note": "Great conversation with mum."
+    },
+    {
+      "id": 1779331916635,
+      "ts": "2025-11-08T17:15:04.000Z",
+      "mood": 2,
+      "tags": [
+        "Sleep",
+        "Food",
+        "Friends"
+      ],
+      "note": "Spent quality time with boyfriend."
+    },
+    {
+      "id": 1779331916636,
+      "ts": "2025-11-05T19:24:36.000Z",
+      "mood": 0,
+      "tags": [
+        "Sleep",
+        "Friends",
+        "Stress"
+      ],
+      "note": "Made a delicious meal."
+    },
+    {
+      "id": 1779331916637,
+      "ts": "2025-11-03T10:01:04.000Z",
+      "mood": 4,
+      "tags": [
+        "Work",
+        "Weather"
+      ],
+      "note": "Exercise gave me a boost."
+    },
+    {
+      "id": 1779331916638,
+      "ts": "2025-11-02T06:43:40.000Z",
+      "mood": 4,
+      "tags": [
+        "Exercise"
+      ],
+      "note": "Made a delicious meal."
+    },
+    {
+      "id": 1779331916639,
+      "ts": "2025-10-28T10:35:32.000Z",
+      "mood": 3,
+      "tags": [
+        "Friends",
+        "Weather"
+      ],
+      "note": "Social plans were so fun."
+    },
+    {
+      "id": 1779331916640,
+      "ts": "2025-10-26T05:32:03.000Z",
+      "mood": 4,
+      "tags": [
+        "Food",
+        "Sleep",
+        "Stress"
+      ],
+      "note": "Exercise gave me a boost."
+    },
+    {
+      "id": 1779331916641,
+      "ts": "2025-10-25T17:35:50.000Z",
+      "mood": 4,
+      "tags": [
+        "Friends",
+        "Boyfriend"
+      ],
+      "note": "Spent quality time with boyfriend."
+    },
+    {
+      "id": 1779331916642,
+      "ts": "2025-10-24T16:56:30.000Z",
+      "mood": 3,
+      "tags": [
+        "Boyfriend",
+        "Weather",
+        "Food"
+      ],
+      "note": "Spent quality time with boyfriend."
+    },
+    {
+      "id": 1779331916643,
+      "ts": "2025-10-23T16:34:50.000Z",
+      "mood": 3,
+      "tags": [
+        "Exercise",
+        "Weather",
+        "Work"
+      ],
+      "note": "Weather was miserable."
+    },
+    {
+      "id": 1779331916644,
+      "ts": "2025-10-22T16:29:51.000Z",
+      "mood": 3,
+      "tags": [
+        "Food"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916645,
+      "ts": "2025-10-21T15:58:57.000Z",
+      "mood": 2,
+      "tags": [
+        "Work"
+      ],
+      "note": "Slept poorly, dragging."
+    },
+    {
+      "id": 1779331916646,
+      "ts": "2025-10-20T19:01:41.000Z",
+      "mood": 0,
+      "tags": [
+        "Work"
+      ],
+      "note": "Laughed a lot today."
+    },
+    {
+      "id": 1779331916647,
+      "ts": "2025-10-18T11:21:07.000Z",
+      "mood": 1,
+      "tags": [
+        "Family",
+        "Work",
+        "Weather"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916648,
+      "ts": "2025-10-16T06:49:22.000Z",
+      "mood": 3,
+      "tags": [
+        "Family",
+        "Exercise",
+        "Sleep"
+      ],
+      "note": "Need more rest."
+    },
+    {
+      "id": 1779331916649,
+      "ts": "2025-10-15T10:48:16.000Z",
+      "mood": 3,
+      "tags": [
+        "Exercise",
+        "Food"
+      ],
+      "note": "Long day but productive."
+    },
+    {
+      "id": 1779331916650,
+      "ts": "2025-10-14T19:37:55.000Z",
+      "mood": 2,
+      "tags": [
+        "Boyfriend",
+        "Work",
+        "Family"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916651,
+      "ts": "2025-10-12T17:40:06.000Z",
+      "mood": 3,
+      "tags": [
+        "Work",
+        "Food"
+      ],
+      "note": "Spent quality time with boyfriend."
+    },
+    {
+      "id": 1779331916652,
+      "ts": "2025-10-11T10:17:09.000Z",
+      "mood": 4,
+      "tags": [
+        "Stress",
+        "Work",
+        "Exercise"
+      ],
+      "note": "Slept poorly, dragging."
+    },
+    {
+      "id": 1779331916653,
+      "ts": "2025-10-09T17:04:41.000Z",
+      "mood": 4,
+      "tags": [
+        "Boyfriend",
+        "Family"
+      ],
+      "note": "Gym session helped a lot."
+    },
+    {
+      "id": 1779331916654,
+      "ts": "2025-10-08T05:52:12.000Z",
+      "mood": 4,
+      "tags": [
+        "Boyfriend",
+        "Exercise",
+        "Sleep"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916655,
+      "ts": "2025-10-07T10:20:01.000Z",
+      "mood": 4,
+      "tags": [
+        "Food"
+      ],
+      "note": "Spent quality time with boyfriend."
+    },
+    {
+      "id": 1779331916656,
+      "ts": "2025-10-06T06:16:44.000Z",
+      "mood": 0,
+      "tags": [
+        "Sleep",
+        "Social"
+      ],
+      "note": "Really good day overall."
+    },
+    {
+      "id": 1779331916657,
+      "ts": "2025-10-05T18:58:28.000Z",
+      "mood": 3,
+      "tags": [
+        "Weather"
+      ],
+      "note": "Laughed a lot today."
+    },
+    {
+      "id": 1779331916658,
+      "ts": "2025-10-04T05:30:32.000Z",
+      "mood": 3,
+      "tags": [
+        "Work"
+      ],
+      "note": "Big deadline stress today."
+    },
+    {
+      "id": 1779331916659,
+      "ts": "2025-10-02T16:03:13.000Z",
+      "mood": 4,
+      "tags": [
+        "Work",
+        "Exercise"
+      ],
+      "note": "Laughed a lot today."
+    },
+    {
+      "id": 1779331916660,
+      "ts": "2025-10-01T10:29:36.000Z",
+      "mood": 2,
+      "tags": [
+        "Work",
+        "Family",
+        "Weather"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916661,
+      "ts": "2025-09-29T10:06:09.000Z",
+      "mood": 3,
+      "tags": [
+        "Work"
+      ],
+      "note": "Friends made everything better."
+    },
+    {
+      "id": 1779331916662,
+      "ts": "2025-09-28T10:53:11.000Z",
+      "mood": 0,
+      "tags": [
+        "Work"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916663,
+      "ts": "2025-09-26T16:41:55.000Z",
+      "mood": 0,
+      "tags": [
+        "Work",
+        "Family"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916664,
+      "ts": "2025-09-25T06:17:39.000Z",
+      "mood": 4,
+      "tags": [
+        "Family"
+      ],
+      "note": "Need more rest."
+    },
+    {
+      "id": 1779331916665,
+      "ts": "2025-09-24T05:38:20.000Z",
+      "mood": 4,
+      "tags": [
+        "Sleep",
+        "Friends",
+        "Food"
+      ],
+      "note": "Anxious for no reason."
+    },
+    {
+      "id": 1779331916666,
+      "ts": "2025-09-23T20:22:00.000Z",
+      "mood": 1,
+      "tags": [
+        "Family",
+        "Sleep"
+      ],
+      "note": "Long day but productive."
+    },
+    {
+      "id": 1779331916667,
+      "ts": "2025-09-19T10:28:47.000Z",
+      "mood": 3,
+      "tags": [
+        "Food"
+      ],
+      "note": "Laughed a lot today."
+    },
+    {
+      "id": 1779331916668,
+      "ts": "2025-09-18T17:24:25.000Z",
+      "mood": 1,
+      "tags": [
+        "Stress",
+        "Food"
+      ],
+      "note": "Finally caught up on sleep."
+    },
+    {
+      "id": 1779331916669,
+      "ts": "2025-09-17T07:49:49.000Z",
+      "mood": 1,
+      "tags": [
+        "Work",
+        "Social"
+      ],
+      "note": "Finally caught up on sleep."
+    },
+    {
+      "id": 1779331916670,
+      "ts": "2025-09-16T10:25:35.000Z",
+      "mood": 2,
+      "tags": [
+        "Social",
+        "Friends",
+        "Family"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916671,
+      "ts": "2025-09-13T19:00:48.000Z",
+      "mood": 3,
+      "tags": [
+        "Exercise",
+        "Sleep",
+        "Family"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916672,
+      "ts": "2025-09-11T07:06:41.000Z",
+      "mood": 3,
+      "tags": [
+        "Sleep",
+        "Friends"
+      ],
+      "note": "Work was overwhelming today."
+    },
+    {
+      "id": 1779331916673,
+      "ts": "2025-09-10T20:37:12.000Z",
+      "mood": 0,
+      "tags": [
+        "Work"
+      ],
+      "note": "Really good day overall."
+    },
+    {
+      "id": 1779331916674,
+      "ts": "2025-09-08T06:35:34.000Z",
+      "mood": 4,
+      "tags": [
+        "Exercise",
+        "Friends"
+      ],
+      "note": "Struggled to focus."
+    },
+    {
+      "id": 1779331916675,
+      "ts": "2025-09-04T11:04:30.000Z",
+      "mood": 1,
+      "tags": [
+        "Work"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916676,
+      "ts": "2025-09-03T10:16:55.000Z",
+      "mood": 0,
+      "tags": [
+        "Food"
+      ],
+      "note": "Need more rest."
+    },
+    {
+      "id": 1779331916677,
+      "ts": "2025-08-31T20:09:49.000Z",
+      "mood": 4,
+      "tags": [
+        "Boyfriend",
+        "Social",
+        "Exercise"
+      ],
+      "note": "Comfort food fixed everything."
+    },
+    {
+      "id": 1779331916678,
+      "ts": "2025-08-29T16:31:45.000Z",
+      "mood": 2,
+      "tags": [
+        "Work",
+        "Weather"
+      ],
+      "note": "Really good day overall."
+    },
+    {
+      "id": 1779331916679,
+      "ts": "2025-08-27T17:43:39.000Z",
+      "mood": 0,
+      "tags": [
+        "Weather",
+        "Work"
+      ],
+      "note": "Tough morning, better afternoon."
+    },
+    {
+      "id": 1779331916680,
+      "ts": "2025-08-24T10:58:41.000Z",
+      "mood": 4,
+      "tags": [
+        "Social"
+      ],
+      "note": "Really proud of myself today."
+    },
+    {
+      "id": 1779331916681,
+      "ts": "2025-08-22T19:12:56.000Z",
+      "mood": 2,
+      "tags": [
+        "Exercise",
+        "Food"
+      ],
+      "note": "Struggled to focus."
+    },
+    {
+      "id": 1779331916682,
+      "ts": "2025-08-21T05:52:33.000Z",
+      "mood": 3,
+      "tags": [
+        "Friends",
+        "Weather",
+        "Work"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916683,
+      "ts": "2025-08-20T07:38:36.000Z",
+      "mood": 3,
+      "tags": [
+        "Friends"
+      ],
+      "note": "Work was overwhelming today."
+    },
+    {
+      "id": 1779331916684,
+      "ts": "2025-08-14T05:08:10.000Z",
+      "mood": 2,
+      "tags": [
+        "Friends",
+        "Family"
+      ],
+      "note": "Spent quality time with boyfriend."
+    },
+    {
+      "id": 1779331916685,
+      "ts": "2025-08-13T07:43:29.000Z",
+      "mood": 3,
+      "tags": [
+        "Friends",
+        "Weather",
+        "Family"
+      ],
+      "note": "Spent quality time with boyfriend."
+    },
+    {
+      "id": 1779331916686,
+      "ts": "2025-08-12T07:30:26.000Z",
+      "mood": 4,
+      "tags": [
+        "Food"
+      ],
+      "note": "Anxious for no reason."
+    },
+    {
+      "id": 1779331916687,
+      "ts": "2025-08-11T15:20:34.000Z",
+      "mood": 1,
+      "tags": [
+        "Work"
+      ],
+      "note": "Made a delicious meal."
+    },
+    {
+      "id": 1779331916688,
+      "ts": "2025-08-09T05:42:48.000Z",
+      "mood": 1,
+      "tags": [
+        "Stress",
+        "Social",
+        "Work"
+      ],
+      "note": "Rainy day stayed in."
+    },
+    {
+      "id": 1779331916689,
+      "ts": "2025-08-07T10:52:26.000Z",
+      "mood": 4,
+      "tags": [
+        "Work"
+      ],
+      "note": "Rainy day stayed in."
+    },
+    {
+      "id": 1779331916690,
+      "ts": "2025-08-02T17:36:22.000Z",
+      "mood": 2,
+      "tags": [
+        "Work",
+        "Family"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916691,
+      "ts": "2025-08-01T20:28:44.000Z",
+      "mood": 4,
+      "tags": [
+        "Boyfriend"
+      ],
+      "note": "Spent quality time with boyfriend."
+    },
+    {
+      "id": 1779331916692,
+      "ts": "2025-07-30T10:41:58.000Z",
+      "mood": 0,
+      "tags": [
+        "Family",
+        "Food",
+        "Stress"
+      ],
+      "note": "Anxious for no reason."
+    },
+    {
+      "id": 1779331916693,
+      "ts": "2025-07-29T18:09:08.000Z",
+      "mood": 0,
+      "tags": [
+        "Sleep",
+        "Work",
+        "Social"
+      ],
+      "note": "Really good day overall."
+    },
+    {
+      "id": 1779331916694,
+      "ts": "2025-07-27T11:36:52.000Z",
+      "mood": 1,
+      "tags": [
+        "Friends",
+        "Sleep"
+      ],
+      "note": "Low energy all day."
+    },
+    {
+      "id": 1779331916695,
+      "ts": "2025-07-25T07:20:55.000Z",
+      "mood": 3,
+      "tags": [
+        "Boyfriend"
+      ],
+      "note": "Work was overwhelming today."
+    },
+    {
+      "id": 1779331916696,
+      "ts": "2025-07-22T07:44:24.000Z",
+      "mood": 2,
+      "tags": [
+        "Friends",
+        "Exercise"
+      ],
+      "note": "Need more rest."
+    },
+    {
+      "id": 1779331916697,
+      "ts": "2025-07-15T19:37:38.000Z",
+      "mood": 3,
+      "tags": [
+        "Boyfriend"
+      ],
+      "note": "Nice walk in the park."
+    },
+    {
+      "id": 1779331916698,
+      "ts": "2025-07-14T11:32:59.000Z",
+      "mood": 4,
+      "tags": [
+        "Work",
+        "Food",
+        "Stress"
+      ],
+      "note": "Great conversation with mum."
+    },
+    {
+      "id": 1779331916699,
+      "ts": "2025-07-13T10:32:43.000Z",
+      "mood": 3,
+      "tags": [
+        "Stress"
+      ],
+      "note": "Really good day overall."
+    },
+    {
+      "id": 1779331916700,
+      "ts": "2025-07-12T15:22:01.000Z",
+      "mood": 2,
+      "tags": [
+        "Work"
+      ],
+      "note": "Big deadline stress today."
+    },
+    {
+      "id": 1779331916701,
+      "ts": "2025-07-10T11:06:05.000Z",
+      "mood": 4,
+      "tags": [
+        "Boyfriend"
+      ],
+      "note": "Long day but productive."
+    },
+    {
+      "id": 1779331916702,
+      "ts": "2025-07-09T16:22:02.000Z",
+      "mood": 3,
+      "tags": [
+        "Work"
+      ],
+      "note": "Unexpected good news!"
+    },
+    {
+      "id": 1779331916703,
+      "ts": "2025-07-08T11:50:20.000Z",
+      "mood": 4,
+      "tags": [
+        "Work"
+      ],
+      "note": "Had a lovely dinner with family."
+    },
+    {
+      "id": 1779331916704,
+      "ts": "2025-07-06T10:19:17.000Z",
+      "mood": 0,
+      "tags": [
+        "Work",
+        "Family"
+      ],
+      "note": "Exercise gave me a boost."
+    },
+    {
+      "id": 1779331916705,
+      "ts": "2025-07-04T20:54:51.000Z",
+      "mood": 4,
+      "tags": [
+        "Work"
+      ],
+      "note": "Made a delicious meal."
+    },
+    {
+      "id": 1779331916706,
+      "ts": "2025-07-03T10:46:35.000Z",
+      "mood": 4,
+      "tags": [
+        "Food"
+      ],
+      "note": "Made a delicious meal."
+    },
+    {
+      "id": 1779331916707,
+      "ts": "2025-07-02T11:38:46.000Z",
+      "mood": 1,
+      "tags": [
+        "Boyfriend",
+        "Exercise",
+        "Sleep"
+      ],
+      "note": "Finally caught up on sleep."
+    },
+    {
+      "id": 1779331916708,
+      "ts": "2025-06-30T17:41:33.000Z",
+      "mood": 2,
+      "tags": [
+        "Work",
+        "Weather",
+        "Stress"
+      ],
+      "note": "Sweet evening at home."
+    },
+    {
+      "id": 1779331916709,
+      "ts": "2025-06-29T16:42:13.000Z",
+      "mood": 3,
+      "tags": [
+        "Social",
+        "Boyfriend"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916710,
+      "ts": "2025-06-28T07:52:48.000Z",
+      "mood": 4,
+      "tags": [
+        "Sleep",
+        "Weather"
+      ],
+      "note": "Anxious for no reason."
+    },
+    {
+      "id": 1779331916711,
+      "ts": "2025-06-27T19:49:31.000Z",
+      "mood": 3,
+      "tags": [
+        "Food",
+        "Exercise"
+      ],
+      "note": "Exercise gave me a boost."
+    },
+    {
+      "id": 1779331916712,
+      "ts": "2025-06-23T17:55:28.000Z",
+      "mood": 4,
+      "tags": [
+        "Weather"
+      ],
+      "note": "Need more rest."
+    },
+    {
+      "id": 1779331916713,
+      "ts": "2025-06-21T10:32:52.000Z",
+      "mood": 0,
+      "tags": [
+        "Sleep"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916714,
+      "ts": "2025-06-18T19:39:25.000Z",
+      "mood": 2,
+      "tags": [
+        "Food"
+      ],
+      "note": "Great conversation with mum."
+    },
+    {
+      "id": 1779331916715,
+      "ts": "2025-06-17T16:41:00.000Z",
+      "mood": 2,
+      "tags": [
+        "Work",
+        "Sleep"
+      ],
+      "note": "Really good day overall."
+    },
+    {
+      "id": 1779331916716,
+      "ts": "2025-06-16T11:17:36.000Z",
+      "mood": 4,
+      "tags": [
+        "Family"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916717,
+      "ts": "2025-06-15T11:47:26.000Z",
+      "mood": 2,
+      "tags": [
+        "Weather"
+      ],
+      "note": "Spent quality time with boyfriend."
+    },
+    {
+      "id": 1779331916718,
+      "ts": "2025-06-14T06:16:22.000Z",
+      "mood": 4,
+      "tags": [
+        "Family",
+        "Exercise",
+        "Stress"
+      ],
+      "note": "Gym session helped a lot."
+    },
+    {
+      "id": 1779331916719,
+      "ts": "2025-06-13T16:21:00.000Z",
+      "mood": 4,
+      "tags": [
+        "Stress",
+        "Family",
+        "Weather"
+      ],
+      "note": "Unexpected good news!"
+    },
+    {
+      "id": 1779331916720,
+      "ts": "2025-06-10T05:02:46.000Z",
+      "mood": 4,
+      "tags": [
+        "Work",
+        "Weather",
+        "Family"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916721,
+      "ts": "2025-06-09T07:15:01.000Z",
+      "mood": 2,
+      "tags": [
+        "Exercise"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916722,
+      "ts": "2025-06-08T15:02:20.000Z",
+      "mood": 3,
+      "tags": [
+        "Boyfriend",
+        "Family"
+      ],
+      "note": "Low energy all day."
+    },
+    {
+      "id": 1779331916723,
+      "ts": "2025-06-07T05:53:34.000Z",
+      "mood": 3,
+      "tags": [
+        "Family"
+      ],
+      "note": "Sweet evening at home."
+    },
+    {
+      "id": 1779331916724,
+      "ts": "2025-06-04T05:34:16.000Z",
+      "mood": 4,
+      "tags": [
+        "Work",
+        "Weather"
+      ],
+      "note": "Unexpected good news!"
+    },
+    {
+      "id": 1779331916725,
+      "ts": "2025-06-02T15:45:09.000Z",
+      "mood": 2,
+      "tags": [
+        "Work",
+        "Social"
+      ],
+      "note": "Tough morning, better afternoon."
+    },
+    {
+      "id": 1779331916726,
+      "ts": "2025-05-31T10:59:28.000Z",
+      "mood": 1,
+      "tags": [
+        "Work",
+        "Friends",
+        "Boyfriend"
+      ],
+      "note": "Gym session helped a lot."
+    },
+    {
+      "id": 1779331916727,
+      "ts": "2025-05-30T06:02:46.000Z",
+      "mood": 2,
+      "tags": [
+        "Sleep",
+        "Boyfriend",
+        "Social"
+      ],
+      "note": "Low energy all day."
+    },
+    {
+      "id": 1779331916728,
+      "ts": "2025-05-29T11:10:27.000Z",
+      "mood": 3,
+      "tags": [
+        "Weather",
+        "Food"
+      ],
+      "note": "Low energy all day."
+    },
+    {
+      "id": 1779331916729,
+      "ts": "2025-05-28T19:18:24.000Z",
+      "mood": 1,
+      "tags": [
+        "Family",
+        "Food",
+        "Sleep"
+      ],
+      "note": "Stressful meeting but got through it."
+    },
+    {
+      "id": 1779331916730,
+      "ts": "2025-05-27T11:37:13.000Z",
+      "mood": 3,
+      "tags": [
+        "Friends",
+        "Family",
+        "Social"
+      ],
+      "note": "Rainy day stayed in."
+    },
+    {
+      "id": 1779331916731,
+      "ts": "2025-05-24T18:30:41.000Z",
+      "mood": 3,
+      "tags": [
+        "Weather",
+        "Friends"
+      ],
+      "note": ""
+    },
+    {
+      "id": 1779331916732,
+      "ts": "2025-05-23T11:51:22.000Z",
+      "mood": 4,
+      "tags": [
+        "Boyfriend"
+      ],
+      "note": "Laughed a lot today."
+    },
+    {
+      "id": 1779331916733,
+      "ts": "2025-05-21T18:24:39.000Z",
+      "mood": 2,
+      "tags": [
+        "Weather",
+        "Sleep"
+      ],
+      "note": ""
+    }
+  ]
+}
