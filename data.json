@@ -1,6 +1,15 @@
 {
   "entries": [
     {
+      "id": 1779436266811,
+      "ts": "2026-05-22T07:51:06.811Z",
+      "mood": 2,
+      "tags": [
+        "Friends"
+      ],
+      "note": ""
+    },
+    {
       "id": 1779376847498,
       "ts": "2026-05-21T15:20:47.498Z",
       "mood": 3,
@@ -27,15 +36,6 @@
       "mood": 4,
       "tags": [
         "Food",
-        "Boyfriend"
-      ],
-      "note": ""
-    },
-    {
-      "id": 1779331890754,
-      "ts": "2026-05-21T02:51:30.754Z",
-      "mood": 3,
-      "tags": [
         "Boyfriend"
       ],
       "note": ""
@@ -2045,6 +2045,51 @@
         "Sleep"
       ],
       "note": ""
+    }
+  ],
+  "tags": [
+    "Work",
+    "Family",
+    "Friends",
+    "Food",
+    "Boyfriend",
+    "Sleep",
+    "Exercise",
+    "Weather",
+    "Stress",
+    "Social"
+  ],
+  "theme": "light",
+  "moods": [
+    {
+      "name": "Awful",
+      "icon": "ti-mood-sad",
+      "bg": "#FCEBEB",
+      "border": "#F09595"
+    },
+    {
+      "name": "Bad",
+      "icon": "ti-mood-confuzed",
+      "bg": "#FAEEDA",
+      "border": "#EF9F27"
+    },
+    {
+      "name": "Okay",
+      "icon": "ti-mood-neutral",
+      "bg": "#F1EFE8",
+      "border": "#888780"
+    },
+    {
+      "name": "Good",
+      "icon": "ti-mood-smile",
+      "bg": "#E1F5EE",
+      "border": "#1D9E75"
+    },
+    {
+      "name": "Great",
+      "icon": "ti-mood-happy",
+      "bg": "#EEEDFE",
+      "border": "#7F77DD"
     }
   ]
 }
