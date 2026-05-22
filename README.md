@@ -1,28 +1,10 @@
 <img src="image.png" alt="I'm fine" width="72">
 
-# I'm fine — v0.0
+# I'm fine — v1.0
 
-A personal mood tracking app that runs locally in the browser. Log how you feel each day, review your history, and visualise patterns over time with a colour heatmap.
+A personal mood tracking app that runs entirely in the browser — no server, no dependencies. Log how you feel each day, review your history, and visualise patterns over time with a colour heatmap.
 
----
-
-## Running the app
-
-Double-click **`start.command`** in Finder.
-
-This opens a Terminal window, starts the server, and launches the app at `http://localhost:3000`.
-
-To stop the server, close the Terminal window or press `Ctrl+C`.
-
-> **First time only:** macOS may block the file. Right-click → Open to bypass Gatekeeper.
-
-Alternatively, from the terminal:
-
-```bash
-node server.js
-```
-
-No dependencies. Requires Node.js (built-in modules only).
+Hosted on GitHub Pages. Open `index.html` directly or visit the live URL.
 
 ---
 
@@ -55,53 +37,57 @@ No dependencies. Requires Node.js (built-in modules only).
 - **Moods** — change the icon and colour for each of the 5 mood levels; the heatmap and history update instantly
 - **Tags** — add or remove tags that appear in the log form
 - **Reset to defaults** — restores the original icons, colours, and tags
+- **GitHub Sync** — configure a GitHub username, repository, and personal access token to back up your data
 
 ---
 
-## Data
+## Data & storage
 
-All entries are stored in **`data.json`** in the same folder. The file is updated live every time an entry is saved. You can open it in any text editor to inspect or edit entries manually.
+All data is stored in the browser's **`localStorage`** — no server needed.
 
-Each entry has the shape:
+| Key | Contents |
+| --- | --- |
+| `imfine_entries` | All mood entries (array) |
+| `imfine_settings` | Theme, mood customisations, tags, GitHub config |
+
+### GitHub backup
+
+Press the **cloud icon** next to "How are you feeling?" to push a snapshot of all your data to `data.json` in your GitHub repository. The button shows:
+
+- **Saved** (green) — push succeeded
+- **Not saved** (yellow) — push failed or GitHub sync is not configured
+
+To set it up: Settings → GitHub Sync → enter your GitHub username, repository name, and a [personal access token](https://github.com/settings/tokens) with `repo` (or `contents: write`) scope.
+
+The file written to GitHub has this shape:
 
 ```json
 {
-  "id": 1779331916531,
-  "ts": "2026-05-21T02:51:56.531Z",
-  "mood": 4,
-  "tags": ["Food", "Boyfriend"],
-  "note": ""
+  "entries": [...],
+  "tags": ["Work", "Family", ...],
+  "theme": "light",
+  "moods": [
+    { "name": "Awful", "icon": "ti-mood-sad", "bg": "#FCEBEB", "border": "#F09595" }
+  ]
 }
 ```
 
 Mood values: `0` Awful · `1` Bad · `2` Okay · `3` Good · `4` Great
-
-Settings (theme, custom mood colours/icons, custom tags) are saved in the browser's `localStorage` and are not part of `data.json`.
 
 ---
 
 ## File structure
 
 ```
-v0.0/
-├── index.html              # App markup and JavaScript
-├── styles.css              # All styles (light + dark mode)
-├── server.js               # Local HTTP server (no dependencies)
-├── data.json               # Entry storage
-├── start.command           # Double-click to launch
-└── mood_journal_mockup.html  # Original design mockup
+v1.0/
+├── index.html     # App markup and all JavaScript
+├── styles.css     # All styles (light + dark mode)
+├── image.png      # App icon
+└── README.md
 ```
 
 ---
 
-## Server API
+## Migrating from v0.0
 
-The server runs on port `3000` and exposes three endpoints used internally by the app.
-
-| Method   | Path                   | Description                                      |
-| -------- | ---------------------- | ------------------------------------------------ |
-| `GET`    | `/api/entries`         | Return all entries as a JSON array               |
-| `POST`   | `/api/entries`         | Append a new entry; returns the updated array    |
-| `DELETE` | `/api/entries?id=<id>` | Remove an entry by id; returns the updated array |
-
-All other requests are served as static files from the project folder.
+v1.0 removes the Node.js server entirely. Your existing entries from `data.json` are embedded as seed data in `index.html` and will be loaded into `localStorage` automatically on first open. After that, all new entries are written to `localStorage` and `data.json` is no longer used locally.
