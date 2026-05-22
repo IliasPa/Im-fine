@@ -39,8 +39,7 @@
           <div class="log-title-row">
             <p class="log-title">How are you feeling?</p>
             <div class="sync-wrap">
-              <span class="sync-status" id="sync-status"></span>
-              <button class="sync-btn" onclick="saveToGitHub()" aria-label="Save to GitHub">
+              <button class="sync-btn" id="sync-btn" onclick="saveToGitHub()" aria-label="Save to GitHub">
                 <i class="ti ti-cloud-upload"></i>
               </button>
             </div>
@@ -494,6 +493,7 @@
         };
         entries.unshift(entry);
         persistEntries();
+        setSync("unsaved");
         selectedMood = null;
         renderMoodBtns();
         document
@@ -836,6 +836,7 @@
         saveSettings();
         applySettings();
         renderHeatmap();
+        setSync("unsaved");
       }
 
       // Mood settings
@@ -888,6 +889,7 @@
         saveSettings();
         applySettings();
         renderMoodSettingsList();
+        setSync("unsaved");
       }
 
       function updateMoodColor(idx, hex) {
@@ -898,6 +900,7 @@
         renderHeatmap();
         const iconBtn = document.querySelector(`#msr-row-${idx} .msr-icon-btn`);
         if (iconBtn) iconBtn.style.color = hex;
+        setSync("unsaved");
       }
 
       // Tag settings
@@ -926,6 +929,7 @@
         saveSettings();
         renderSettingsTagChips();
         renderLogTags();
+        setSync("unsaved");
         input.value = "";
       }
 
@@ -934,6 +938,7 @@
         saveSettings();
         renderSettingsTagChips();
         renderLogTags();
+        setSync("unsaved");
       }
 
       function resetDefaults() {
@@ -943,6 +948,7 @@
         renderMoodSettingsList();
         renderSettingsTagChips();
         renderHeatmap();
+        setSync("unsaved");
         showToast("Reset to defaults");
       }
 
@@ -992,17 +998,10 @@
       }
 
       function setSync(state) {
-        const el = document.getElementById("sync-status");
-        if (state === "saving") {
-          el.textContent = "Saving…";
-          el.style.color = "var(--text-3)";
-        } else if (state === "saved") {
-          el.textContent = "Saved";
-          el.style.color = "#1D9E75";
-        } else {
-          el.textContent = "Not saved";
-          el.style.color = "#EF9F27";
-        }
+        const btn = document.getElementById("sync-btn");
+        btn.classList.remove("is-saved", "is-unsaved");
+        if (state === "saved") btn.classList.add("is-saved");
+        else if (state === "unsaved") btn.classList.add("is-unsaved");
       }
 
       function renderGithubSettings() {
