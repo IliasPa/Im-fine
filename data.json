@@ -2057,9 +2057,10 @@
     "Exercise",
     "Weather",
     "Stress",
-    "Social"
+    "Social",
+    "sdga"
   ],
-  "theme": "light",
+  "theme": "dark",
   "moods": [
     {
       "name": "Awful",
@@ -2088,8 +2089,8 @@
     {
       "name": "Great",
       "icon": "ti-mood-happy",
-      "bg": "#EEEDFE",
-      "border": "#7F77DD"
+      "bg": "#eceafb",
+      "border": "#6a5fdd"
     }
   ]
 }
