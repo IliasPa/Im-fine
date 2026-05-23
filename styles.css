@@ -283,6 +283,23 @@ body {
   word-break: break-word;
 }
 
+.entry-del-btn {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  padding: 4px;
+  margin-top: 1px;
+  color: var(--text-3);
+  cursor: pointer;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.15s, color 0.15s;
+  font-size: 14px;
+  line-height: 1;
+}
+.entry-row:hover .entry-del-btn { opacity: 1; }
+.entry-del-btn:hover { color: #E05555; }
+
 /* ── History tab ── */
 .hist-header {
   padding: 22px 20px 14px;

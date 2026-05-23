@@ -1,6 +1,6 @@
 <img src="image.png" alt="I'm fine" width="72">
 
-# I'm fine — v1.0
+# I'm fine — v1.1
 
 A personal mood tracking app that runs entirely in the browser — no server, no dependencies. Log how you feel each day, review your history, and visualise patterns over time with a colour heatmap.
 
@@ -15,7 +15,7 @@ Hosted on GitHub Pages. Open `index.html` directly or visit the live URL.
 - Select a mood from a 5-level scale: Awful, Bad, Okay, Good, Great
 - Tag what influenced your mood (Work, Family, Friends, Food, Boyfriend, Sleep, Exercise, Weather, Stress, Social)
 - Add an optional free-text note
-- The three most recent entries are shown below the form
+- The three most recent entries are shown below the form, each with a **delete button** (appears on hover)
 
 ### History tab
 
@@ -79,7 +79,7 @@ Mood values: `0` Awful · `1` Bad · `2` Okay · `3` Good · `4` Great
 ## File structure
 
 ```
-v1.0/
+v1.1/
 ├── index.html     # App markup and all JavaScript
 ├── styles.css     # All styles (light + dark mode)
 ├── image.png      # App icon
@@ -88,6 +88,10 @@ v1.0/
 
 ---
 
-## Migrating from v0.0
+## Changes in v1.1
 
-v1.0 removes the Node.js server entirely. Your existing entries from `data.json` are embedded as seed data in `index.html` and will be loaded into `localStorage` automatically on first open. After that, all new entries are written to `localStorage` and `data.json` is no longer used locally.
+- Added delete button to each of the three recent entries (hover to reveal, click to remove)
+
+## Migrating from v1.0
+
+No migration needed — `localStorage` data is fully compatible.

@@ -551,7 +551,19 @@
       ${e.tags.length ? `<div class="entry-tags">${esc(e.tags.join(" · "))}</div>` : ""}
       ${e.note ? `<div class="entry-note">${esc(e.note)}</div>` : ""}
     </div>
+    <button class="entry-del-btn" onclick="deleteEntry(${e.id})" aria-label="Delete entry">
+      <i class="ti ti-trash"></i>
+    </button>
   </div>`;
+      }
+
+      function deleteEntry(id) {
+        entries = entries.filter((e) => e.id !== id);
+        persistEntries();
+        setSync("unsaved");
+        renderRecent();
+        renderHistory();
+        renderHeatmap();
       }
 
       function renderRecent() {
